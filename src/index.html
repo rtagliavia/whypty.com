@@ -1,19 +1,438 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-    <head>
-        <title>Why</title>
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <title>Why</title>
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/flipclock.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
 
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800">
-        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/css/bootstrap.css">
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/tether.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/CountDownJS.js"></script>
 
-    <body>
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/tether.min.js"></script>
-        <script src="/js/bootstrap.min.js"></script>
-    </body>
+</head>
+<body>
+  <header class="container mt-4 pd-4" id="topbar">
+    <div class="row">
+      <div class="col-6 col-md-2" id=logo>
+      <img src="assets/img/logo-bg-light.svg" height="50px" alt="Why PTY Logo">
+    </div>
+    <div class="col-6 col-md-6 d-none d-md-inline-flex">
+      <h6 class="text-dark pt-3 text-left">1er. Foro Internacional de Buenas Prácticas de Emprendimiento</h6>
+    </div>
+    <div class="col-6 col-md-4  d-md-flex justify-content-right text-right" id="social-header">
+      <a href="#" class="text-yellow fa fa-facebook social-header"></a>
+      <a href="#" class="text-yellow fa fa-instagram social-header"></a>
+      <a href="#" class="text-yellow fa fa-twitter social-header"></a>
+    </div><!-- col social-->
+  </header>
+  <nav class="navbar navbar-toggleable-md navbar-dark justify-content-end scrolling-navbar navbar-transparent navbar-expand-md bg-dark ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-/assets="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav justify-content-center w-100 ">
+          <a class="nav-item nav-link" href="#speakers">Oradores</a>
+          <a class="nav-item nav-link" href="#why">¿Por qué?</a>
+          <a class="nav-item nav-link" href="#agenda">Agenda</a>
+          <a class="nav-item nav-link" href="#patrocinadores">Patrocinantes</a>
+          <a class="nav-item nav-link" href="#equipo">Equipo</a>
+          <a class="nav-item nav-link" href="contactanos.html">Contáctanos</a>
+        </div><!-- navbar-bar-->
+      </div>
+    </div><!-- container -->
+  </nav>
+  <div class="jumbotron jumbotron-fluid mb-0" id="banner">
+    <div class="container text-center" style="height:580px;padding-top:170px;">
+      <div class="row">
+        <div class="col-12 pt-2">
+          <h1 class="text-light">¡ES HORA DE ACTUAR!</h1>
+          <h3 class="text-light">Aprovecha Cupos Limitados</h3>
+          <a href="#" class="btn btn-warning align-self-center mx-auto text-purple" role="button">Registrate Hoy</a>
+
+          <div class="w-75 mx-auto" id="holder" >
+            <script>
+      				countDown1 = new CountDownObject(); //add countdown as object
+
+      				countDown1.TIME_ZONE = -5, // your time zone (-12 ... +14)
+
+      				// Your date and time
+      				countDown1.SET_YOUR_SEC = 0,
+      				countDown1.SET_YOUR_MIN = 0,
+      				countDown1.SET_YOUR_HOUR = 14,
+      				countDown1.SET_YOUR_DAY = 23,
+      				countDown1.SET_YOUR_MONTH = 08,
+      				countDown1.SET_YOUR_YEAR = 2018,
+
+      				countDown1.NUM_OF_ELEMENTS = 8, // number of flip-elements(from 1 to 9)
+      				countDown1.TIME_ANIMATION = 950, // time of flip animation in milliseconds(from 50 to 950)
+      				countDown1.BACK_COLOR = "#1a1a1a", // flip-element back color
+      				countDown1.DIGITS_COLOR = "#e0e0e0", // digits color on flip-elements
+      				countDown1.TEXT_COLOR = "#e0e0e0", // text color under flip elements(seconds, minutes and etc.)
+      				countDown1.IS_DYNAMIC_COLOR = false, // back color will vary(true or false)
+
+      				countDown1.CANVAS_NAME = "CountDownCanvas";  //canvas name in html-code
+
+      				countDown1.Start(); //start countdown
+      			</script>
+          </div>
+        </div><!-- countdown -->
+        </div><!--col -->
+      </div><!-- row -->
+    </div><!-- inner container -->
+  </div><!-- jumbotron -->
+  <div class="container-fluid no-padding bg-yellow mb-0 pb-0">
+    <div class="container-fluid" id="donde">
+      <div class="container mt-4 pb-4">
+        <div class="row">
+          <div class="col-12 col-md-4 pt-2 text-center text-md-right">
+            <img src="assets/img/logo-usma.png" class="pd-4" height="100px" alt="Universidad Catolica Santa Maria La Antigua Logo">
+          </div><!-- col -->
+          <div class="col-12 col-md-8 pt-2">
+            <h4 class="text-center text-md-left text-purple">Jueves 23 de Agosto de 2018</h4>
+            <h4 class="text-center text-md-left text-purple">1:00pm a 7:00pm</h4>
+          </div><!-- col -->
+        </div><!-- row -->
+      </div> <!-- container -->
+    </div>
+  </div>
+  <div class="container-fluid bg-yellow" id="speakers">
+    <h1 class="text-center text-white pt-4">Temas</h1>
+    <div class="container" id="speaker-cards">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h3 class=" d-none text-center text-purple">¿POR QUÉ SER?</h3>
+          <div class="card text-center">
+            <img class="card-img-top" src="assets/img/speakers/Pilar-Sinclair-b_w.png" alt="Card image cap">
+            <div class="card-header">
+              <h4 class="text-center text-purple"> Pilar Sinclair</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Como Supere el miedo a Emprender.</p>
+            </div><!-- card-body-->
+          </div><!--card-->
+        </div><!--col-->
+        <div class="col-12 col-md-6 col-lg-3  mb-4">
+          <h3 class="d-none text-center text-purple">¿POR QUÉ HACER?</h3>
+          <div class="card text-center">
+            <img class="card-img-top" src="assets/img/speakers/Monica-Cantillo-B_W.png" alt="Card image cap">
+            <div class="card-header">
+              <h4 class="text-center text-purple"> Monica Cantillo</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Compartamos mis hábitos de éxito.</p>
+            </div><!-- card-body-->
+          </div><!--card-->
+        </div><!--col-->
+        <div class="col-12 col-md-6 col-lg-3  mb-4">
+          <h3 class="d-none text-center text-purple">¿POR QUÉ TENER?</h3>
+          <div class="card text-center">
+            <img class="card-img-top" src="assets/img/speakers/Felipe-Echandi-B_W.png" alt="Card image cap">
+            <div class="card-header">
+              <h4 class="text-center text-purple">Felipe Echandi</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">El resultado de vencer el miedo.</p>
+            </div><!-- card-body-->
+          </div><!--card-->
+        </div><!--col-->
+        <div class="col-12 col-md-6 col-lg-3  mb-4">
+          <h3 class="d-none text-center text-purple">¿POR QUÉ TENER PROPÓSITO?</h3>
+          <div class="card text-center">
+            <img class="card-img-top" src="assets/img/speakers/Felipe-Echandi-B_W.png" alt="Card image cap">
+            <div class="card-header">
+              <h4 class="text-center text-purple">??</h4>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Mi proposito de vida.</p>
+            </div><!-- card-body-->
+          </div><!--card-->
+        </div><!--col-->
+      </div><!--row-->
+    </div> <!-- container -->
+  </div><!-- container-fluid -->
+  <div class="container-fluid no-padding bg-yellow mb-0 pb-0">
+    <div class="container-fluid" id="why">
+      <h1 class="text-center pt-4 text-purple">POR QUÉ PARTICIPAR EN <img src="assets/img/logo-bg-light.svg" height="70px" alt="Why PTY Logo"></h1>
+      <div class="container mt-4 pb-4">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-3 pb-4  pt-2 text-center ">
+            <i class="fa fa-handshake-o text-danger big-icon"></i>
+            <h5 class="text-dark">Conoce emprendedores y forma parte de una red de profesionales en Panama</h5>
+          </div><!-- col -->
+          <div class="col-12 col-md-6 col-lg-3 pb-4 pt-2 text-center ">
+            <i class="fa fa-lightbulb-o text-danger big-icon"></i>
+            <h5 class="text-dark">Encuentra inspiracion en emprendedores con proposito</h5>
+          </div><!-- col -->
+          <div class="col-12 col-md-6 col-lg-3 pb-4  pt-2 text-center ">
+            <i class="fa fa-map-signs text-danger big-icon"></i>
+            <h5 class="text-dark">Conoce las experiencias de nuestros oradores y como comenzaron</h5>
+          </div><!-- col -->
+          <div class="col-12 col-md-6 col-lg-3 pb-4  pt-2 text-center">
+            <i class="fa fa-rocket text-danger big-icon"></i>
+            <h5 class="text-dark">Descubre el por que de nuestros oradores y que les motiva a seguir</h5>
+          </div><!-- col -->
+        </div><!-- row -->
+      </div> <!-- container -->
+    </div>
+  </div>
+  <div class="container-fluid bg-yellow" id="agenda">
+    <h1 class="text-center text-dark pt-4">Agenda</h1>
+    <div class="container" id="value cards">
+      <div class="row">
+        <div class="col-12">
+          <div class="table-responsive border-dark">
+            <table class="table table-condensed table-bordered">
+              <thead>
+                <tr>
+                  <th><i class="fa fa-clock"></i>HORA</th>
+                  <th>Tema</th>
+                  <th>Orador</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    1:00-1:30 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      Registro
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    1:30-1:35 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      Inicio de Evento
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    1:35-2:05 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      ¿Cómo superé el miedo a emprender?
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                      Ana Elisa VIllalaz
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    2:10-2:45 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      Mi proposito de vida
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                      Orlando Reyes
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    2:45-3:20 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      Compartamos mis hábitos de éxito
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                      Mónica Cantillo
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    3:20-3:55 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      El camino del emprendedor
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                      Pilar Sinclair
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    3:55-4:30 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      El resultado de vencer el miedo
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                      Susana Lau
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    4:30-5:00 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      CIERRE DEL EVENTO
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="agenda-time" class="active" rowspan="1">
+                    5:00-5:30 pm
+                  </td>
+                  <td class="agenda-time">
+                    <div class="agenda-event">
+                      NETWORKING
+                    </div>
+                  </td>
+                  <td class="agenda-events">
+                    <div class="agenda-event">
+                    </div>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div><!--icon col-->
+      </div><!--row-->
+    </div> <!-- container -->
+  </div><!-- container-fluid -->
+  <div class="container-fluid" id="break-yellow">
+  </div>
+  <div class="container-fluid" id="patrocinadores">
+    <h1 class="text-center text-dark pt-4">Patrocinadores</h1>
+    <div class="container" id="value cards">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+        </div><!--icon col-->
+        <div class="col-12 col-md-6 col-lg-4">
+        </div><!--icon col-->
+        <div class="col-12 col-md-6 col-lg-4">
+        </div><!--icon col-->
+      </div><!--row-->
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+      </div><!--row-->
+    </div> <!-- container -->
+  </div><!-- container-fluid -->
+  <hr class=".section-breaker">
+  <div class="container-fluid" id="equipo">
+    <h1 class="text-center text-dark pt-4">Equipo</h1>
+    <div class="container" id="value cards">
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+      </div><!--row-->
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+      </div><!--row-->
+      <div class="row">
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+        <div class="col-6 col-md-4 col-lg-2">
+        </div><!--icon col-->
+      </div><!--row-->
+    </div> <!-- container -->
+  </div><!-- container-fluid -->
+  <footer class="container-fluid bg-yellow pt-4" id="footer">
+    <div class="row">
+      <div class="col-lg-8 border-dark">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.384910251159!2d-79.52326408441517!3d9.028607691479124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca82e0841d1c3%3A0x3feb8502267a3b14!2sUniversidad+Cat%C3%B3lica+Santa+Mar%C3%ADa+La+Antigua!5e0!3m2!1ses!2spa!4v1533235632386" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <div class="col-lg-4">
+        <h4><Strong>Tumba Muerto, Panamá</strong><h5>Av. Ricardo J. Alfaro</h5>
+        <hr>
+        <h4><Strong>Salon</strong><h5>Av. Ricardo J. Alfaro</h5>
+        <hr>
+        <h4><Strong>Salon</strong><h5>Av. Ricardo J. Alfaro</h5>
+        <hr>
+        <h4><Strong>Hora</strong></h4><h5>2:00pm a 6:00pm</h5>
+        <hr>
+        <h4><Strong>Contáctanos</strong></h4>
+        <a href="tel:+50762146287"><h5>+507 6214 6287</h5></a>
+      </div>
+  </footer>
+</body>
 </html>
