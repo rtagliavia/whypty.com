@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 <head>
@@ -17,74 +18,87 @@
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/CountDownJS.js"></script>
+  <script src="js/navbar.js"></script>
+  <!-- Hotjar Tracking Code for www.whypty.com -->
+  <script>
+  (function(h,o,t,j,a,r){
+    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+    h._hjSettings={hjid:979407,hjsv:6};
+    a=o.getElementsByTagName('head')[0];
+    r=o.createElement('script');r.async=1;
+    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122988465-1"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
+gtag('config', 'UA-122988465-1');
+</script>
 </head>
 <body>
-  <header class="container mt-4 pd-4" id="topbar">
+  <header class="container-fluid mt-4 pd-4" id="topbar">
     <div class="row">
-      <div class="col-6 col-md-2" id=logo>
-      <a href="index.html"><img src="assets/img/logo-bg-light.svg" height="50px" alt="Why PTY Logo"></a>
-    </div>
-    <div class="col-6 col-md-6 d-none d-md-inline-flex">
-      <h6 class="text-dark pt-3 text-left">1er. Foro Internacional de Buenas Prácticas de Emprendimiento</h6>
-    </div>
-    <div class="col-6 col-md-4  d-md-flex justify-content-right text-right" id="social-header">
-      <a href="https://www.facebook.com/whypty" class="text-yellow fa fa-facebook social-header"></a>
-      <a href="https://instagram.com/why.pty" class="text-yellow fa fa-instagram social-header"></a>
-    </div><!-- col social-->
-  </header>
-  <nav class="navbar navbar-toggleable-md navbar-dark justify-content-end scrolling-navbar navbar-transparent navbar-expand-md bg-dark ">
-    <div class="container">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-/assets="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="navbar-nav justify-content-center w-100 ">
-          <a class="nav-item nav-link" href="#speakers">Oradores</a>
-          <a class="nav-item nav-link" href="#why">¿Por qué?</a>
-          <a class="nav-item nav-link" href="#agenda">Agenda</a>
-          <a class="nav-item nav-link d-none" href="#patrocinadores">Patrocinantes</a>
-          <a class="nav-item nav-link d-none" href="#equipo">Equipo</a>
-          <a href="registro-pagina.html" class="btn btn-warning text-white ml-1 text-left text-md-center" role="button">Registrate Hoy</a>
-          <a href="contactanos-sponsor.html" class="btn btn-danger text-white ml-1 text-left text-md-center" role="button">Se un Patrocinador</a>
-        </div><!-- navbar-bar-->
+      <div class="col-4 col-md-4 offset-4 text-center  text-center align-items-center" id=logo>
+        <a href="index.html"><img src="assets/img/logo-bg-light.svg" height="60px" alt="Why PTY Logo"></a>
       </div>
-    </div><!-- container -->
-  </nav>
-  <div class="jumbotron jumbotron-fluid background-no-margin" id="banner">
-    <div class="container text-center" style="height:580px;padding-top:170px;">
-      <div class="row">
-        <div class="col-12 pt-2">
-          <h1 class="text-light">¡ES HORA DE ACTUAR!</h1>
-          <h3 class="text-light pb-3">Aprovecha Cupos Limitados</h3>
-          <a href="registro-pagina.html" class="btn-lg btn-warning align-self-center mx-auto text-purple" role="button">Registrate Hoy</a>
-          <div class="w-75 mx-auto" id="holder" >
-            <script>
-      				countDown1 = new CountDownObject(); //add countdown as object
-
-      				countDown1.TIME_ZONE = -5, // your time zone (-12 ... +14)
-
-      				// Your date and time
-      				countDown1.SET_YOUR_SEC = 0,
-      				countDown1.SET_YOUR_MIN = 0,
-      				countDown1.SET_YOUR_HOUR = 14,
-      				countDown1.SET_YOUR_DAY = 23,
-      				countDown1.SET_YOUR_MONTH = 08,
-      				countDown1.SET_YOUR_YEAR = 2018,
-
-      				countDown1.NUM_OF_ELEMENTS = 8, // number of flip-elements(from 1 to 9)
-      				countDown1.TIME_ANIMATION = 950, // time of flip animation in milliseconds(from 50 to 950)
-      				countDown1.BACK_COLOR = "#1a1a1a", // flip-element back color
-      				countDown1.DIGITS_COLOR = "#e0e0e0", // digits color on flip-elements
-      				countDown1.TEXT_COLOR = "#e0e0e0", // text color under flip elements(seconds, minutes and etc.)
-      				countDown1.IS_DYNAMIC_COLOR = false, // back color will vary(true or false)
-
-      				countDown1.CANVAS_NAME = "CountDownCanvas";  //canvas name in html-code
-
-      				countDown1.Start(); //start countdown
-      			</script>
-          </div>
-        </div><!-- countdown -->
+      <div class="col-4 text-right align-items-center" id="social-header">
+        <a href="https://www.facebook.com/whypty" class="text-white fa fa-facebook "></a>
+        <a href="https://instagram.com/why.pty" class="text-white fa fa-instagram "></a>
+      </div><!-- col social-->
+    </header>
+    <nav class="nav navbar navbar-toggleable-md navbar-dark justify-content-end scrolling-navbar navbar-transparent navbar-expand-md bg-dark ">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-/assets="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="navbar-nav justify-content-center w-100 ">
+            <a class="nav-item nav-link" href="#speakers">Oradores</a>
+            <a class="nav-item nav-link" href="#why">¿Por qué?</a>
+            <a class="nav-item nav-link" href="#agenda">Agenda</a>
+            <a class="nav-item nav-link d-none" href="#patrocinadores">Patrocinantes</a>
+            <a class="nav-item nav-link d-none" href="#equipo">Equipo</a>
+            <a href="registro-pagina.html" class="btn btn-warning text-purple ml-1 text-left text-md-center" role="button">Registrate Hoy</a>
+            <a href="contactanos-sponsor.html" class="btn btn-success text-white ml-1 text-left text-md-center" role="button">Se un Patrocinador</a>
+          </div><!-- navbar-bar-->
+        </div>
+      </div><!-- container -->
+    </nav>
+    <div class="jumbotron jumbotron-fluid background-no-margin" id="banner">
+      <div class="container text-center" style="padding-top:90px;">
+        <div class="row">
+          <div class="col-12 pt-2">
+            <h1 class="text-light pt-3 text-center text-lowercase">1er. Foro Internacional de Buenas Prácticas de Emprendimiento</h1>
+            <!--h1 class="text-light">¡ES HORA DE ACTUAR!</h1-->
+            <h5 class="text-light pb-3">Aprovecha cupos limitados</h5>
+            <a href="registro-pagina.html" class="hero-button btn-lg btn-warning align-self-center mx-auto text-purple p-2" role="button">Regístrate gratis ya!</a>
+            <div class="w-75 mx-auto" id="holder" style="max-width:450px;">
+              <script>
+              countDown1 = new CountDownObject(); //add countdown as object
+              countDown1.TIME_ZONE = -5, // your time zone (-12 ... +14)
+              // Your date and time
+              countDown1.SET_YOUR_SEC = 0,
+              countDown1.SET_YOUR_MIN = 0,
+              countDown1.SET_YOUR_HOUR = 14,
+              countDown1.SET_YOUR_DAY = 23,
+              countDown1.SET_YOUR_MONTH = 08,
+              countDown1.SET_YOUR_YEAR = 2018,
+              countDown1.NUM_OF_ELEMENTS = 8, // number of flip-elements(from 1 to 9)
+              countDown1.TIME_ANIMATION = 950, // time of flip animation in milliseconds(from 50 to 950)
+              countDown1.BACK_COLOR = "#1a1a1a", // flip-element back color
+              countDown1.DIGITS_COLOR = "#e0e0e0", // digits color on flip-elements
+              countDown1.TEXT_COLOR = "#e0e0e0", // text color under flip elements(seconds, minutes and etc.)
+              countDown1.IS_DYNAMIC_COLOR = false, // back color will vary(true or false)
+              countDown1.CANVAS_NAME = "CountDownCanvas";  //canvas name in html-code
+              countDown1.Start(); //start countdown
+              </script>
+            </div>
+          </div><!-- countdown -->
         </div><!--col -->
       </div><!-- row -->
     </div><!-- inner container -->
@@ -97,7 +111,7 @@
             <img src="assets/img/logo-usma.png" class="pd-4" height="100px" alt="Universidad Catolica Santa Maria La Antigua Logo">
           </div><!-- col -->
           <div class="col-12 col-md-8 pt-2 align-content-center">
-            <h4 class="text-center text-md-left text-purple pt-4">Jueves 23 de Agosto de 2018<br>1:00 pm a 5:30 pm</h4>
+            <h4 class="text-center text-md-left text-purple pt-4">Jueves 23 de agosto de 2018<br>1:00 pm a 5:30 pm</h4>
           </div><!-- col -->
         </div><!-- row -->
       </div> <!-- container -->
@@ -172,7 +186,7 @@
   </div><!-- container-fluid -->
   <div class="container-fluid no-padding bg-yellow mb-0 pb-0">
     <div class="container-fluid" id="why">
-      <h1 class="text-center pt-4 text-purple">POR QUÉ PARTICIPAR EN <img src="assets/img/logo-bg-light.svg" height="70px" alt="Why PTY Logo"></h1>
+      <h1 class="text-center pt-4 text-purple">Por qué participar en <img src="assets/img/logo-bg-light.svg" height="70px" alt="Why PTY Logo"></h1>
       <div class="container mt-4 pb-4">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 pb-4  pt-2 text-center ">
@@ -244,12 +258,12 @@
                   </td>
                   <td class="agenda-time">
                     <div class="agenda-event">
-                      Mi propósito de vida
+                      Cómo superé el miedo a emprender
                     </div>
                   </td>
                   <td class="agenda-events">
                     <div class="agenda-event">
-                      Orlando Reyes
+                      Ana Elisa Villalaz
                     </div>
                   </td>
                 </tr>
@@ -259,12 +273,12 @@
                   </td>
                   <td class="agenda-time">
                     <div class="agenda-event">
-                      Cómo superé el miedo a emprender
+                      Mi propósito de vida
                     </div>
                   </td>
                   <td class="agenda-events">
                     <div class="agenda-event">
-                      Ana Elisa Villalaz
+                      Orlando Reyes
                     </div>
                   </td>
                 </tr>
@@ -341,103 +355,113 @@
                     </div>
                   </td>
                 </tr>
-                </tbody>
-              </table>
-            </div>
+              </tbody>
+            </table>
           </div>
-        </div><!--icon col-->
-      </div><!--row-->
-    </div> <!-- container -->
-  </div><!-- container-fluid -->
-  <div class="container-fluid d-none background-no-margins" id="patrocinadores">
-    <h1 class="text-center text-dark pt-4">Patrocinadores</h1>
-    <div class="container" id="value cards">
-      <div class="row">
-        <div class="col-12 col-md-6 col-lg-4">
-        </div><!--icon col-->
-        <div class="col-12 col-md-6 col-lg-4">
-        </div><!--icon col-->
-        <div class="col-12 col-md-6 col-lg-4">
-        </div><!--icon col-->
-      </div><!--row-->
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-      </div><!--row-->
-    </div> <!-- container -->
-  </div><!-- container-fluid -->
-  <div class="container-fluid d-none background-no-margins" id="equipo">
-    <h1 class="text-center text-dark pt-4">Equipo</h1>
-    <div class="container" id="value cards">
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-      </div><!--row-->
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-      </div><!--row-->
-      <div class="row">
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-        <div class="col-6 col-md-4 col-lg-2">
-        </div><!--icon col-->
-      </div><!--row-->
-    </div> <!-- container -->
-  </div><!-- container-fluid -->
-  <footer class="container-fluid bg-dark pt-4 background-no-margins" id="footer">
-    <div class="container">
+        </div>
+      </div><!--icon col-->
+    </div><!--row-->
+  </div> <!-- container -->
+</div><!-- container-fluid -->
+<div class="container-fluid  background-no-margins" id="patrocinadores">
+  <h1 class="text-center text-purple pt-4">Patrocinadores</h1>
+  <div class="container" id="value cards">
     <div class="row">
-      <div class="col-lg-8 border-dark">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.384910251159!2d-79.52326408441517!3d9.028607691479124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca82e0841d1c3%3A0x3feb8502267a3b14!2sUniversidad+Cat%C3%B3lica+Santa+Mar%C3%ADa+La+Antigua!5e0!3m2!1ses!2spa!4v1533235632386" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <div class="col-12 col-md-6 col-lg-4">
+        <a href="https://www.etyalab.com/" target="_blank">
+          <img src="assets/sponsors/logo_lema_transparent.png" class="sponsor img-fluid align-middle ">
+        </a>
+      </div><!--icon col-->
+      <div class="d-none col-12 col-md-6 col-lg-4">
+        <a href="" target="_blank">
+          <img src="assets/sponsors/PRENDETRANSP.png" class="sponsor img-fluid align-middle" style>
+        </a>
+      </div><!--icon col-->
+      <div class="col-12 col-md-6 col-lg-4">
+        <a href="https://mercaditoapp.com/" target="_blank">
+          <img src="assets/sponsors/logo-mercadito-01.png" class="sponsor img-fluid align-middle">
+        </a>
+      </div><!--icon col-->
+      <div class="col-12 col-md-6 col-lg-4 ">
+        <a href="https://spacesworks.com" target="_blank">
+          <img src="assets/sponsors/SPACE_logo_Black.png" class="sponsor img-fluid align-middle">
+        </a>
       </div>
-      <div class="col-lg-4">
-        <h4 class="text-white"><Strong>Universidad Católica Santa Maria La Antigua, Panamá</strong><h5 class="text-white">Av. Ricardo J. Alfaro</h5>
-        <hr>
-        <h4 class="text-white"><Strong>Salón</strong><h5 class="text-white">Auditorio Tomás Clavel</h5>
-        <hr>
-        <h4 class="text-white"><Strong>Hora</strong></h4><h5 class="text-white">1:00 pm a 5:30 pm</h5>
-        <hr>
-        <h4 class="text-white"><Strong>Contáctanos</strong></h4>
-        <a href="tel:+50762146287"><h5 class="text-white">+507 6214 6287</h5></a>
+    </div><!--row-->
+    <div class="row d-none">
+      <div class="col-6 col-md-4 col-lg-2">
+
+      </div><!--icon col-->
+      <div class="col-6 col-md-4 col-lg-2">
+
+      </div><!--icon col-->
+      <div class="col-6 col-md-4 col-lg-2">
+      </div><!--icon col-->
+      <div class="col-6 col-md-4 col-lg-2">
+      </div><!--icon col-->
+      <div class="col-6 col-md-4 col-lg-2">
+      </div><!--icon col-->
+      <div class="col-6 col-md-4 col-lg-2">
+      </div><!--icon col-->
+    </div><!--row-->
+  </div> <!-- container -->
+</div><!-- container-fluid -->
+<hr>
+<div class="container-fluid background-no-margins" id="prensa">
+  <h1 class="text-center text-purple pt-4">Prensa</h1>
+  <div class="container" id="value cards">
+    <div class="row">
+      <div class="col-8 offset-2 col-md-6 offset-md-3 text-center ">
+        <a href="http://www.epasa.com/" target="_blank">
+          <img src="assets/sponsors/EPASA-logo.png" class="img-fluid align-middle mx-auto sponsor">
+        </a>
+      </div><!--icon col-->
+    </div><!--row-->
+  </div><!-- container-fluid -->
+
+  <div class="d-none container-fluid background-no-margins" id="prensa">
+    <h1 class="text-center text-purple pt-4">Prensa</h1>
+    <div class="container" id="value cards">
+      <div class="row">
+        <div class="col-8 offset-2 col-md-6 offset-md-3 text-center">
+          <img src="assets/sponsors/EPASA-logo.png" class="img-fluid align-middle mx-auto">
+        </div><!--icon col-->
+      </div><!--row-->
+    </div><!-- container-fluid -->
+  </div><!-- container-fluid -->
+  <div class="d-none container-fluid background-no-margins" id="apoyado">
+    <h1 class="d-none text-center text-purple pt-4">Apoyado por</h1>
+    <div class="container" id="value cards">
+      <div class="row">
+        <div class="col-8 offset-2 col-md-6 offset-md-3 text-center">
+          <img src="assets/sponsors/logo-senacyt.png" class="h-75 align-middle mx-auto">
+        </div><!--icon col-->
+      </div><!--row-->
+    </div><!-- container-fluid -->
+  </div><!-- container-fluid -->
+  <footer class="container-fluid bg-dark background-no-margins mt-4 pt-4" id="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 border-dark">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.384910251159!2d-79.52326408441517!3d9.028607691479124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca82e0841d1c3%3A0x3feb8502267a3b14!2sUniversidad+Cat%C3%B3lica+Santa+Mar%C3%ADa+La+Antigua!5e0!3m2!1ses!2spa!4v1533235632386" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="text-white text-center text-md-left"><Strong>Universidad Católica Santa Maria La Antigua, Panamá</strong></h5><h6 class="text-white text-center text-md-left">Av. Ricardo J. Alfaro</h6>
+          <hr>
+          <h5 class="text-white text-center text-md-left"><Strong>Salón</strong></h5><h6 class="text-white text-center text-md-left">Auditorio Tomás Clavel</h6>
+          <hr>
+          <h5 class="text-white text-center text-md-left"><Strong>Hora</strong></h5><h6 class="text-white text-center text-md-left">1:00 pm a 5:30 pm</h6>
+          <hr>
+          <h5 class="text-white text-center text-md-left"><Strong>Contáctanos</strong></h5>
+          <a href="tel:+50762146287"><h6 class="text-white text-center text-md-left">+507 6214 6287</h6></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 text-center">
+          <hr>
+          <a href="https://www.facebook.com/whypty" class="text-white fa fa-facebook "></a>
+          <a href="https://instagram.com/why.pty" class="text-white fa fa-instagram "></a>
+        </div>
       </div>
     </div>
   </footer>

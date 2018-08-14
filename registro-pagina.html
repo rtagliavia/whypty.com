@@ -16,60 +16,39 @@
   <script src="js/jquery.min.js"></script>
   <script src="js/tether.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <!--script src="js/CountDownJS.js"></script-->
-  <script src="js/navbar.js"></script>
-  <!-- Hotjar Tracking Code for www.whypty.com -->
-  <script>
-  (function(h,o,t,j,a,r){
-    h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-    h._hjSettings={hjid:979407,hjsv:6};
-    a=o.getElementsByTagName('head')[0];
-    r=o.createElement('script');r.async=1;
-    r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-    a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122988465-1"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+  <script src="js/CountDownJS.js"></script>
 
-gtag('config', 'UA-122988465-1');
-</script>
 </head>
 <body>
-  <header class="container-fluid mt-4 pd-4" id="topbar">
+  <header class="container mt-4 pd-4" id="topbar">
     <div class="row">
-      <div class="col-4 col-md-4 offset-4 text-center  text-center align-items-center" id=logo>
-        <a href="index.html"><img src="assets/img/logo-bg-light.svg" height="60px" alt="Why PTY Logo"></a>
+      <div class="col-6 col-md-2" id=logo>
+      <a href="index.html"><img src="assets/img/logo-bg-light.svg" height="50px" alt="Why PTY Logo"></a>
+    </div>
+    <div class="col-6 col-md-6 d-none d-md-inline-flex">
+      <h6 class="text-dark pt-3 text-left">1er. Foro Internacional de Buenas Prácticas de Emprendimiento</h6>
+    </div>
+    <div class="col-6 col-md-4  d-md-flex justify-content-right text-right" id="social-header">
+      <a href="https://www.facebook.com/whypty" class="text-yellow fa fa-facebook social-header"></a>
+      <a href="https://instagram.com/why.pty" class="text-yellow fa fa-instagram social-header"></a>
+    </div><!-- col social-->
+  </header>
+  <nav class="navbar navbar-toggleable-md navbar-dark justify-content-end scrolling-navbar navbar-transparent navbar-expand-md bg-dark ">
+    <div class="container">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-/assets="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav justify-content-center w-100 ">
+          <a class="nav-item nav-link" href="index.html#speakers">Oradores</a>
+          <a class="nav-item nav-link" href="index.html#why">¿Por qué?</a>
+          <a class="nav-item nav-link" href="index.html#agenda">Agenda</a>
+          <a class="nav-item nav-link d-none" href="#patrocinadores">Patrocinantes</a>
+          <a class="nav-item nav-link d-none" href="#equipo">Equipo</a>
+        </div><!-- navbar-bar-->
       </div>
-      <div class="col-4 text-right align-items-center" id="social-header">
-        <a href="https://www.facebook.com/whypty" class="text-white fa fa-facebook "></a>
-        <a href="https://instagram.com/why.pty" class="text-white fa fa-instagram "></a>
-      </div><!-- col social-->
-    </header>
-    <nav class="nav navbar navbar-toggleable-md navbar-dark justify-content-end scrolling-navbar navbar-transparent navbar-expand-md bg-dark ">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-/assets="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="navbar-nav justify-content-center w-100 ">
-            <a class="nav-item nav-link" href="#speakers">Oradores</a>
-            <a class="nav-item nav-link" href="#why">¿Por qué?</a>
-            <a class="nav-item nav-link" href="#agenda">Agenda</a>
-            <a class="nav-item nav-link d-none" href="#patrocinadores">Patrocinantes</a>
-            <a class="nav-item nav-link d-none" href="#equipo">Equipo</a>
-            <a href="registro-pagina.html" class="btn btn-warning text-purple ml-1 text-left text-md-center" role="button">Registrate Hoy</a>
-            <a href="contactanos-sponsor.html" class="btn btn-success text-white ml-1 text-left text-md-center" role="button">Se un Patrocinador</a>
-          </div><!-- navbar-bar-->
-        </div>
-      </div><!-- container -->
-    </nav>
-  </div>
-</div>
+    </div><!-- container -->
+  </nav>
   <div class="container">
   <!-- Begin MailChimp Signup Form -->
   <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
@@ -205,29 +184,23 @@ gtag('config', 'UA-122988465-1');
   });}(jQuery));var $mcj = jQuery.noConflict(true);</script>
   <!--End mc_embed_signup-->
 </div><!--container-->
-<footer class="container-fluid bg-dark background-no-margins mt-4 pt-4" id="footer">
+<footer class="container-fluid bg-yellow pt-4" id="footer">
   <div class="container">
-    <div class="row">
-      <div class="col-lg-8 border-dark">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.384910251159!2d-79.52326408441517!3d9.028607691479124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca82e0841d1c3%3A0x3feb8502267a3b14!2sUniversidad+Cat%C3%B3lica+Santa+Mar%C3%ADa+La+Antigua!5e0!3m2!1ses!2spa!4v1533235632386" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
-      </div>
-      <div class="col-lg-4">
-        <h5 class="text-white text-center text-md-left"><Strong>Universidad Católica Santa Maria La Antigua, Panamá</strong></h5><h6 class="text-white text-center text-md-left">Av. Ricardo J. Alfaro</h6>
-        <hr>
-        <h5 class="text-white text-center text-md-left"><Strong>Salón</strong></h5><h6 class="text-white text-center text-md-left">Auditorio Tomás Clavel</h6>
-        <hr>
-        <h5 class="text-white text-center text-md-left"><Strong>Hora</strong></h5><h6 class="text-white text-center text-md-left">1:00 pm a 5:30 pm</h6>
-        <hr>
-        <h5 class="text-white text-center text-md-left"><Strong>Contáctanos</strong></h5>
-        <a href="tel:+50762146287"><h6 class="text-white text-center text-md-left">+507 6214 6287</h6></a>
-      </div>
+  <div class="row">
+    <div class="col-lg-8 border-dark">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3940.384910251159!2d-79.52326408441517!3d9.028607691479124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8faca82e0841d1c3%3A0x3feb8502267a3b14!2sUniversidad+Cat%C3%B3lica+Santa+Mar%C3%ADa+La+Antigua!5e0!3m2!1ses!2spa!4v1533235632386" width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen></iframe>
     </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <hr>
-        <a href="https://www.facebook.com/whypty" class="text-white fa fa-facebook "></a>
-        <a href="https://instagram.com/why.pty" class="text-white fa fa-instagram "></a>
-      </div>
+    <div class="col-lg-4">
+      <h4><Strong>Tumba Muerto, Panamá</strong><h5>Av. Ricardo J. Alfaro</h5>
+      <hr>
+      <h4><Strong>Salon</strong><h5>Av. Ricardo J. Alfaro</h5>
+      <hr>
+      <h4><Strong>Salon</strong><h5>Tomas Clavel</h5>
+      <hr>
+      <h4><Strong>Hora</strong></h4><h5>2:00pm a 6:00pm</h5>
+      <hr>
+      <h4><Strong>Contáctanos</strong></h4>
+      <a href="tel:+50762146287"><h5>+507 6214 6287</h5></a>
     </div>
   </div>
 </footer>
