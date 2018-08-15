@@ -5,9 +5,9 @@ h1, h2, h3, h4, h5, h6 {
 /* icons */
 /* Style all font awesome icons*/
 .fa {
-  padding: 15px;
-  font-size: 30px;
-  width: 60px;
+  padding: 5px;
+  font-size: 20px;
+  width: 30px;
   text-align: center;
   text-decoration: none; }
 
@@ -43,6 +43,12 @@ footer .fa {
   font-size: 4rem;
   text-align: center;
   text-decoration: none; }
+
+tr:nth-child(odd) {
+  background-color: #ffffff66 !important; }
+
+#social-header {
+  margin-top: 10px; }
 
 .vcen {
   display: inline-block;
@@ -91,7 +97,7 @@ footer .fa {
   color: #FFCC00; }
 
 .text-purple {
-  color: #562380; }
+  color: #562380ff; }
 
 .navbar.transparent.navbar-inverse .navbar-inner {
   background: rgba(0, 0, 0, 0.4); }

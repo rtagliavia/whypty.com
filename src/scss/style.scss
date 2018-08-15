@@ -1,4 +1,4 @@
-$purple: #562380;
+$purple: #562380ff;
 $yellow: #FFCC00;
 $accent1: #9E0059;
 $accent2: #FF0054;
@@ -13,9 +13,9 @@ h1, h2, h3, h4, h5, h6{
 /* icons */
 /* Style all font awesome icons*/
 .fa {
-    padding: 15px;
-    font-size: 30px;
-    width: 60px;
+    padding: 5px;
+    font-size: 20px;
+    width: 30px;
     text-align: center;
     text-decoration: none;
 }
@@ -55,7 +55,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', end
   text-align: center;
   text-decoration: none;
 }
-.social-header{
+tr:nth-child(odd) {
+    background-color: #ffffff66 !important;
+}
+
+#social-header{
+  margin-top:10px;
     //padding-bottom: 0rem;
     //width: 2rem;//padding-left:1rem;
     //font-size: 2rem;
