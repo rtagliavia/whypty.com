@@ -28,6 +28,10 @@ footer .fa {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
   color: white; }
 
+.card-img-overlay {
+  color: white;
+  background-color: #562380CC; }
+
 .fa:hover {
   opacity: 0.7; }
 
