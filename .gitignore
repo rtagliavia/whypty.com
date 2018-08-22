@@ -59,3 +59,7 @@ typings/
 
 # next.js build output
 .next
+src/assets/sponsors/.DS_Store
+src/assets/.DS_Store
+src/.DS_Store
+.DS_Store
